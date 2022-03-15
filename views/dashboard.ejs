@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      <i class="fas fa-key fa-6x"></i>
+      <i class="fa-solid fa-brackets-curly"></i>
+      <h1>Dashboard</h1>
+
+      <hr>
+
+      <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+      <!-- <a class="btn btn-dark btn-lg" href="/submit" role="button">Submit a Secret</a> -->
+    </div>
+    <%if(isAdmin==="true"){ %>
+      <a href="/register" role="button">Create new user</a>
+      <% } %>
+  </div>
+
+  <%- include('partials/footer') %>
